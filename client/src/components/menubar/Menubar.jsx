@@ -13,7 +13,7 @@ const Menubar = () => {
 
         try {
             setLoading(true)
-            const res = await axios.post("http://localhost:8080/api/process_url", { urls: urls })
+            const res = await axios.post("https://news-resarch-tool.onrender.com/api/process_url", { urls: urls })
             console.log(res)
         } catch (error) {
             console.log(error)

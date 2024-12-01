@@ -14,7 +14,7 @@ const Main = () => {
     e.preventDefault()
     try {
       setLoading(true)
-      const res = await axios.post("http://localhost:8080/api/predict", { q: q })
+      const res = await axios.post("https://news-resarch-tool.onrender.com/api/predict", { q: q })
       setMessage(res.data.answer)
       setSource(res.data.sources)
       console.log(res.data.sources)
