@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from typing import List
 app = FastAPI()
 
-origins = ["http://localhost:5173"]
+origins = ["https://news-resarch-tool.vercel.app"]
 
 app.add_middleware(
     CORSMiddleware,
