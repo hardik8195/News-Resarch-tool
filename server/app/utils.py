@@ -16,7 +16,6 @@ file_path = 'vector_store.pkl'
 def process_url(urls):
     loader = UnstructuredURLLoader(urls=urls)
     data = loader.load()
-    print(data[0])
 
     text_splitter = RecursiveCharacterTextSplitter(
         separators=['\n\n', '\n', '.', ','],
