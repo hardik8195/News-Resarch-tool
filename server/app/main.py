@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from utils import process_url
-from utils import predict
+from .utils import process_url
+from .utils import predict
 from pydantic import BaseModel
 from typing import List
 app = FastAPI()

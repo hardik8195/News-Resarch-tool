@@ -5,14 +5,10 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import UnstructuredURLLoader
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
-from llm_helper import llm
+from .llm_helper import llm
 
 
 file_path = 'vector_store.pkl'
-
-
-
-
 def process_url(urls):
     loader = UnstructuredURLLoader(urls=urls)
     data = loader.load()
