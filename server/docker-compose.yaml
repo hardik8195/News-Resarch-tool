@@ -1,8 +1,0 @@
-services:
-  fastapi-server:
-    build:
-      context: .
-    ports:
-      - "80:80" 
-    env_file:
-      - .env
