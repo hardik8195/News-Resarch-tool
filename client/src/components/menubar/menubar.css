@@ -1,0 +1,86 @@
+.menubar {
+  background-color: #f8f9fa;
+  width: 20%;
+  /* Sidebar width */
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.menu-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* Spacing between elements */
+}
+
+.menu-form label {
+  font-weight: bold;
+}
+
+.menu-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.menu-form button {
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-form button:hover {
+  background-color: #0056b3;
+}
+
+.loading-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.message {
+  margin-top: 1rem;
+  color: green;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

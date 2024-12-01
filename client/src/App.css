@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+  }
+  
+  .navbar {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1; 
+  }
+  
+  .menubar {
+    background-color: #f8f9fa;
+    width: 20%; 
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+  }
+  
+  .main-page {
+    background-color: #ffffff;
+    flex: 1; 
+    padding: 1rem;
+  }
+  
